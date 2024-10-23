@@ -63,5 +63,6 @@ int main()
 	
 	cerr << "\nRun Time : " << ((double)(clock() - z) / CLOCKS_PER_SEC);
 	
+	system("pause");
 	return 0;
 }
