@@ -1,7 +1,7 @@
 import csv
 
 result = []
-with open('hw20/web_clients_correct.csv', 'r') as csvfile:
+with open("hw20/web_clients_correct.csv", "r") as csvfile:
     csv_reader = csv.reader(csvfile)
     next(csv_reader)
 
@@ -19,4 +19,7 @@ with open('hw20/web_clients_correct.csv', 'r') as csvfile:
 
         result.append(temp)
 
-print(result[0])
+output = open("hw20/output.txt", "w")
+for item in result:
+    output.write(item + "\n")
+output.close()
